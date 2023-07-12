@@ -62,10 +62,48 @@ header {
     width: 100%;
 }
 
-
 .ecosystemImg {
     width: 100%;
     pointer-events: none;
+}
+
+.muscleImg {
+    position: absolute;
+    width: 300px;
+    left: 1px;
+}
+
+#gems {
+    background: #000000;
+}
+
+.gemsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.gemsBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'LjStudiosMb', sans-serif;
+    color: #FF94CA;
+    gap: 25px;
+}
+
+.gemsBox h2 {
+    font-size: 75px;
+    max-width: 1200px;
+    text-align: center;
+    text-shadow: #FFF 0px 0px 5px,  #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px;
+}
+
+.gemsBox h3 {
+    font-size: 45px;
+    max-width: 1000px;
+    text-align: center;
 }
 
 #howWeMakeHype {
@@ -122,6 +160,11 @@ header {
     font-size: 25px;
     line-height: 30px;
     text-shadow: #000 2px 2px 0px;
+}
+
+.hypeButton h3 {
+    text-align: center;
+    font-size: 50px;
 }
 
 .hypeButton a{
