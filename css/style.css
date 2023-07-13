@@ -68,9 +68,24 @@ header {
 }
 
 .muscleImg {
+    z-index: 1;
     position: absolute;
     width: 300px;
     left: 1px;
+}
+
+.muscleImg2 {
+    z-index: 1;
+    position: absolute;
+    width: 300px;
+    right: 1px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.brainChairImg {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
 #gems {
@@ -85,6 +100,7 @@ header {
 }
 
 .gemsBox {
+    z-index: 10;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -259,6 +275,15 @@ header {
     color: #fff;
 }
 
+.casesNumbers {
+    text-align: center;
+}
+
+.casesNumbers h3{
+    color: #49FF18;
+    text-shadow: 0 0 2px #FFF, 0 0 15px #49FF18;
+}
+
 .casesInfoTextP p{
     text-align: center;
     font-size: 25px;
@@ -397,6 +422,31 @@ body::-webkit-scrollbar-thumb {
 
 @media screen and (max-width: 430px) {
 
+
+    .muscleImg2{ 
+        display: none;
+    }
+
+    .muscleImg{ 
+        display: none;
+    }
+
+    .greyFaceImg {
+        display: none;
+    }
+
+    .creepyImg {
+        display: none;
+    }
+
+    .brainChairImg {
+        width: 300px;
+    }
+
+    .teamImg {
+        width: 400px;
+    }
+
     .headerContainer {
         padding: 5px;
         gap: 10px;
@@ -413,6 +463,72 @@ body::-webkit-scrollbar-thumb {
     .links a{
         font-size: 20px;
         line-height: 20px;
+    }
+
+    .gemsBox h2 {
+        font-size: 40px;
+    }
+
+    .gemsBox h3 {
+        font-size: 25px;
+    }
+
+    .hypeBox {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hypeHeader h2 {
+        font-size: 40px;
+    }
+
+    .hypeInfo {
+        width: 400px;
+        text-align: center;
+    }
+
+    .hypeInfo p {
+        font-size: 17px;
+    }
+
+    .serviceImg {
+        width: 170px;
+    }
+
+    .casesBox {
+        padding: 50px 0px 50px 0px;
+    }
+
+    .casesHeader h2 {
+        font-size: 50px;
+    }
+
+    .casesInfo {
+        width: 400px;
+        flex-direction: column;
+    }
+
+    .casesInfoTextP p{
+        max-width: 350px;
+        font-size: 17px;
+    }
+
+    .casesInfoText {
+        width: 400px;
+    }
+
+    .hypeButton {
+        text-align: center;
+    }
+
+    .teamBox {
+        flex-direction: column-reverse;
+        padding: 50px 0px 50px 0px;
+    }
+
+    .teamInfoText p{
+        width: 400px;
+        font-size: 17px;
     }
 
 }
